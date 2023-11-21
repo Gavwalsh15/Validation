@@ -14,11 +14,11 @@ public class Person {
     @Email(message = "Invalid email address")
     private String email;
 
-    @NegativeOrZero(message = "Employee Id cannot be negative or zero")
+    @Positive(message = "ID must be Positive")
     @NotNull(message = "ID cannot be blank")
     private int employeeId;
 
-    @NegativeOrZero(message = "Age cannot be negative or zero")
+    @PositiveOrZero(message = "Age cannot be negative or zero")
     @NotNull(message = "Age cannot be blank")
     private int age;
 
